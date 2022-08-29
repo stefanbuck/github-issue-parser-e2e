@@ -19,6 +19,7 @@ jobs:
       - run: cat output.json
       
       - run: echo '${{ steps.issue-parser.outputs.issueparser_favorite_color }}'
+      - run: echo '${{ steps.issue-parser.outputs.issueparser_favorite_dish }}'
 
 
       - uses: peter-evans/close-issue@v1
